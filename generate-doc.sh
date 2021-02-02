@@ -27,7 +27,7 @@ else
         exit 1
     fi
     echo "Clone docs rendering repo"
-    git clone https://github.com/ovh/docs-rendering.git $WORKDIR
+    git clone --recurse-submodules https://github.com/ovh/docs-rendering.git $WORKDIR
     echo "Repo cloned"
 
     cd $WORKDIR
